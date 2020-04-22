@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MS Fashion</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+  html {
+  scroll-behavior: smooth;
+  }
+
+  .box1{
+    border: 1px solid white;
+    background-color:whitesmoke;
+    height: 30px;
+    position: top;
+  }
+  ul
+  {
+    float: left;
+    color:black;
+    font-style:normal;
+    }
+    ul li {
+      margin-top: -10px;
+      float: left;
+      position: relative;
+      left:300%;
+      width: 100px;
+      font-size: 15px;
+      list-style-type: none;
+      padding: 5px 4px;
+
+      }
+
+  ul li a{
+    text-decoration: none;
+    color:black;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color:black;
+    padding: 14px 12px;
+    background-color:inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+   .dropdown:hover .dropbtn {
+    background-color:whitesmoke;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .box2{
+    border:5px solid transparent;
+    background-color: whitesmoke;
+    height: 60px;
+
+  }
+  ol{
+    float: left;
+    color: white;
+  }
+  ol li{
+    float: left;
+    width: 90px;
+    position: relative;
+    left:25%;
+    list-style-type: none;
+    font-size: 18px;
+    color: black;
+    padding:10px 24px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  ol li a {
+    text-decoration: none;
+    color: black;
+  }
+  ol li a:hover {
+  border-bottom: 2px solid green;
+  }
+
+  .fa-search{
+    position: absolute;
+    top:9%;
+    left: 85%;
+    color: black;
+
+  }
+  .fa-user{
+    position: absolute;
+    top:3.4%;
+      left: 95%;
+    color: black;
+
+  }
+  .topnav{
+  float:right;
+  left: 76%;
+  position: absolute;
+  height: 30px;
+  width: 70px;
+  border-radius: 75%;
+  }
+  .fa-shopping-cart{
+  position: absolute;
+  top:9%;
+  left: 95%;
+  color: black;
+
+  }
+  hu{
+    position: absolute;
+    top:7%;
+    left: 96%;
+    color:red;
+
+  }
+
+    h2{
+      position: relative;
+      text-transform: uppercase;
+      font-family: barlow condensed,sans-serif;
+      left: -60.8%;
+      margin-top: 9px;
+      font-weight: normal;
+        }
+        p{
+          color:white;
+          padding: 100px;
+          font-size: 50px;
+          text-align: center;
+        }
+        .back img{
+          background-size: cover;
+          height: 1020px;
+          width: 1505px;
+        }
+  font{
+    color: red;
+  }
+  .text{
+  position: absolute;
+  left: 7%;
+  top: 30%;
+  }
+  h1{
+  font-size: 70px;
+  font-family: barlow condensed ,sans-serif;
+  text-transform: capitalize;
+  width: 400px;
+  line-height: 70px;
+  font-weight: normal;
+  word-spacing: 0px;
+  color:white;
+
+  }
+  h4{
+  position: absolute;
+  font-family: barlow condensed,sans-serif;
+  top: -4%;
+  font-weight: normal;
+  text-transform: uppercase;
+  color:black;
+
+  }
+  form input[type="submit"]
+  {
+  position: absolute;
+  top: 86%;
+  padding: 10px;
+  border-radius: 75%;
+  text-transform: capitalize;
+  background-color: crimson;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+
+  }
+  form input[type="submit"]:hover{
+  background-color:blue;
+  }
+  .images21{
+  position: absolute;
+  left: 5%;
+  top: 100%;
+  border: 1px solid gray;
+
+  }
+  .images21:hover{
+  box-shadow: 1px 3px 9px;
+  }
+
+  h6{
+  color: black;
+  position: absolute;
+  left: 25%;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  top: 25%;
+  width: 200px;
+  font-size: 40px;
+  text-align: center;
+
+
+  }
+  .search-container{
+
+    float:right;
+    position: absolute;
+    left: 25%;
+    width: 200px;
+
+  }
+  .search-container input[type=text]{
+    width: 200px;
+    height: 42px;
+    position: absolute;
+
+
+
+
+  }
+
+  .search-container button {
+    float: right;
+    background:whitesmoke;
+    border: none;
+    cursor: pointer;
+    left: 102%;
+    width: 50px;
+    position: absolute;
+    height:40px;
+    top: -650%;
+
+
+
+  }
+  .images22{
+  position: absolute;
+  left: 36%;
+  top: 100%;
+  border: 1px solid gray;
+
+  }
+  .images22:hover{
+  box-shadow: 1px 3px 9px;
+  }
+  h{
+  color: black;
+  position: absolute;
+  left: 32%;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  top: 45%;
+  width: 200px;
+  font-size: 40px;
+  text-align: center;
+
+  }
+  .images23{
+  position: absolute;
+  left: 67%;
+  top: 100%;
+  border: 1px solid gray;
+
+  }
+  .images23:hover{
+  box-shadow: 1px 3px 9px;
+  }
+  hy{
+  color: black;
+  position: absolute;
+  left: 25%;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  top: 45%;
+  width: 200px;
+  font-size: 40px;
+  text-align: center;
+
+  }
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+  button {
+    background-color:whitesmoke;
+    color:black;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    left:92%;
+    width: 100px;
+
+
+
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Extra styles for the cancel button */
+
+
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+
+  }
+
+  </style>
+
+<body>
+
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img_avatar.png" alt="" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
+  <div class="box1">
+    <ul>
+    <li>
+      <a href="">MyAccount</a>
+      <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </li>
+        <li><a href="">Help</a>
+
+     <div class="dropdown">
+    <button class="dropbtn">M
+      <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </button>
+    <div class="dropdown-content">
+      <pu>
+        Order Status
+        Delivery
+        Returns
+        Contact Us
+        Privacy Policy
+        Terms of Use
+        Terms of Sale
+        Site Feedback
+        View All
+</pu>
+
+    </div>
+  </div> <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+          <li><a href="etc.html">About</a> <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+    </ul>
+  </div>
+  <div class="box2">
+    <ol>
+      <li><a href="etc.html">Home</a></li>
+      <li><a href="#subhan">Men</a></li>
+      <li><a href="#subhan">Women</a> </li>
+      <li><a href="#subhan">Accessories</a></li>
+    </ol>
+    <div class="icon">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+          <div class="topnav">
+
+  <div class="search-container">
+<form>
+  <input type="text" onclick="#subhan" placeholder="Search.." name="search" >
+  <button type="submit" formaction="#subhan"><i class="fa fa-search"></i>
+</form>
+
+  </div>
+</div>
+          <div class="background">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <hu>0</hu>
+
+
+          </div>
+      <h2><font>MS</font>Fashion</h2>
+
+  </div>
+
+  <div class="back">
+    <img src="https://dbv47yu57n5vf.cloudfront.net/s3fs-public/editorial/my/2017/November/2/shutterstock_641814016.jpg" alt="m">
+    <div class="text">
+      <h1>Get upto 30% off new arrivals</h1>
+          <h4>Summer Collection<font1> 2020 </font1></h4>
+          <form action="https://www.flipkart.com/"class="" action="index.html" method="post">
+            <input type="Submit" name="" value="Shop">
+                </form>
+
+    </div>
+  </div>
+
+    <div class="images21" id ="subhan">
+    <a href="https://www.nike.com/in/w/mens-clothing-6ymx6znik1" ><img src="https://ae01.alicdn.com/kf/HTB1RnSYkruWBuNjSszgq6z8jVXal.jpg" height="450px" width="440px" ></a>
+      <h6>Men's</h6>
+      </div>
+      <div class="images22">
+      <a href="https://www.nike.com/in/women"><img src="https://www.dhresource.com/0x0/f2/albu/g10/M01/30/13/rBVaVl2LItSAUyycAAMBXbALGrU039.jpg"height="450px" width="440px"></a>
+      <h> Women's </h>
+    </div>
+    <div class="images23">
+      <a href="https://www.myntra.com/women-accessories"><img src="https://previews.123rf.com/images/anjelagr/anjelagr1601/anjelagr160100056/52244481-women-s-set-of-fashion-accessories-on-wooden-background-shoes-handbag-cell-phone-and-cosmetics.jpg" alt=""height="450px" width="440px"></a>
+        <hy> Accessorie's </hy>
+  </div>
+
+
+</body>
+</html>
